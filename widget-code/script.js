@@ -1,7 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+/* Test Local Environment Variables */
+const frontendApiUrl = window.env.REACT_FRONTEND_URL;
+console.log('Frontend API URL:', frontendApiUrl);
+/* ----- */
+
+document.addEventListener('DOMContentLoaded', function () {
+
     const searchButton = document.querySelector('.search-button');
 
-    searchButton.addEventListener('click', function() {
+    searchButton.addEventListener('click', function () {
         // Get the input keyword
         const keyword = document.querySelector('.keyword-input').value;
 
@@ -30,19 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify(data)
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Handle response if needed
-            console.log('Response:', data);
-        })
-        .catch(error => {
-            // Handle errors
-            console.error('Error:', error);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Handle response if needed
+                console.log('Response:', data);
+            })
+            .catch(error => {
+                // Handle errors
+                console.error('Error:', error);
+            });
     }
 });
