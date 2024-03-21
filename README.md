@@ -8,6 +8,8 @@ The website is a job board that allows potential users search for jobs using key
 
 This widget will make use of code injection to simply be inserted anywhere on their website they prefer the input section to be placed. 
 
+![Sreenshot Showing Input Form Sample](<screenshots/Screenshot from 2024-03-21 02-17-02.png>)
+
 ## How it Works
 
 1. The widget code can simply be copied and pasted on your web builder (SquareSpace, Wix, Elementor) using the code options
