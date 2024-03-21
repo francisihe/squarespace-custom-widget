@@ -35,11 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Construct the final URL with the query parameters
         const url = baseUrl + '?' + searchParams.toString();
+        
+        // console.log('Data sent:', data);
 
-        // // Navigate to the constructed URL
-        // window.location.href = url;
+        // Navigate to the constructed URL
+        window.location.href = url;
 
-        console.log('Data sent:', data);
     }
 
 });
