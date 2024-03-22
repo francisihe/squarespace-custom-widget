@@ -18,6 +18,11 @@ This widget will make use of code injection to simply be inserted anywhere on th
 
 3. The custom frontend has the preferred api integrated and will send this data to the provided endpoint and handle the results to display
 
+## Sample Code (Notes)
+
+Code is currently split into regular static website files with the regular HTML/CSS/JS file structure. 
+
+The env.js file tests the flow using localhost. Widget code will simply be compiled into one file and injected where necessary on website builder.
 
 ## Project Owner
 Name: Francis Ihejirika
